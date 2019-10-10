@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+#error-panel {
+  animation: flash-error 200ms ease-in-out;
+}
+
+@keyframes flash-error {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
